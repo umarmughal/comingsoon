@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="https://npmcdn.com/comet-css@1.2.0/dist/comet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>
+</head>
+<title>Coming Soon</title>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300');
+    html, body {height: 100%}
+
+    body {
+        color: #888;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        background-color: #111;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 3px;
+    }
+
+    h1 {
+        color: #888;
+        font-size: 50px;
+        font-weight: 100;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+</style>
+<div class="container">
+    <h1>&#128522</h1>
+    <p>Stay Tuned! Something new is coming soon</p>
+    <p>Thank You!</p>
+</div>
+<canvas class="background"></canvas>
+<script>
+    var particles = Particles.init({
+        selector: '.background',
+        color: '#fc0'
+    });
+</script>
+</html>
